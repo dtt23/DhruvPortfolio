@@ -57,7 +57,7 @@ export default function Footer() {
     <FooterStyle>
       <div className="container">
         <div className="footer__col1">
-          <h1 className="footer__col1__title">Ayan Khan</h1>
+          <h1 className="footer__col1__title">Dhruva Turaga</h1>
           <PText>
             A freelance web designer and developer from Chittagong, Bangladesh.
             I always make websites that have unique designs and also has a good
@@ -96,15 +96,15 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '+88012312',
-                path: 'tel:+88012312',
+                title: '+44 7746108966',
+                path: 'tel:+447746108966',
               },
               {
-                title: 'webcifar@gmail.com',
-                path: 'mailto:webcifar@gmail.com',
+                title: 'dhruva.turaga@gmail.com',
+                path: 'mailto:dhruva.turaga@gmail.com',
               },
               {
-                title: 'GEC Circle, Chittagong, Bangladesh',
+                title: 'Peterborough, Cambrideshire',
                 path: 'http://google.com/maps',
               },
             ]}
@@ -132,12 +132,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>
-            © 2021 - Ayan Khan | Designed By{' '}
-            <a target="_blank" rel="noreferrer" href="http://webcifar.com">
-              web cifar
-            </a>{' '}
-          </PText>
+          <PText>© 2025 - Dhruva Turaga</PText>
         </div>
       </div>
     </FooterStyle>

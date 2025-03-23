@@ -48,7 +48,7 @@ export default function ContactForm() {
       <FormStyle>
         <div className="form-group">
           <label htmlFor="name">
-            Your Name
+            Name
             <input
               type="text"
               id="name"
@@ -60,7 +60,7 @@ export default function ContactForm() {
         </div>
         <div className="form-group">
           <label htmlFor="email">
-            Your Email
+            Email
             <input
               type="email"
               id="email"
@@ -72,7 +72,7 @@ export default function ContactForm() {
         </div>
         <div className="form-group">
           <label htmlFor="message">
-            Your message
+            Message
             <textarea
               type="text"
               id="message"
