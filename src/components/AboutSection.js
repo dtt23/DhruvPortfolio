@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-sec-img.png';
+import AboutImg from '../assets/images/about-image.jpg';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -79,12 +79,12 @@ export default function AboutSection() {
             subheading="Let me introduce myself"
             heading="About Me"
           />
-          <PText>
-            I am an aeronautical engineering student at Imperial College London
+          <h1>
+            I am an Aeronautical engineering student at Imperial College London
             with experience in mechanical and electronics design, AI and VR
             simulations. I am passionate about creating impactful solutions that
             fill the gap between theory and real-world applications.
-          </PText>
+          </h1>
           <div className="aboutSection__buttons">
             <Button btnText="Works" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" outline />

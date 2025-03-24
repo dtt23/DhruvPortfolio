@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.png';
+import HeroImg from '../assets/images/hero.jpg';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
@@ -9,7 +9,7 @@ import PText from './PText';
 const HeroStyles = styled.div`
   .hero {
     height: 100vh;
-    min-height: 1000px;
+    min-height: 900px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -39,7 +39,13 @@ const HeroStyles = styled.div`
     border: 2px solid var(--gray-1);
   }
   .hero__info {
-    margin-top: -18rem;
+    margin-top: -16rem;
+    color: #fff !important; /* White text */
+    background-color: #add8e6 !important; /* Light blue background */
+  }
+  .hero__info h1 {
+    background-color: #add8e6; /* Light blue background */
+    color: #fff; /* White text for <h1> inside .hero__info */
   }
   .hero__social,
   .hero__scrollDown {
@@ -110,7 +116,7 @@ const HeroStyles = styled.div`
       height: 300px;
     }
     .hero__info {
-      margin-top: 3rem;
+      margin-top: 5rem;
     }
     .hero__social {
       left: 0px;
@@ -129,8 +135,8 @@ const HeroStyles = styled.div`
         ul {
           li {
             a {
-              font-size: 1.2rem;
-              margin-bottom: 1rem;
+              font-size: 1rem;
+              margin-bottom: 2rem;
             }
           }
         }
@@ -143,6 +149,11 @@ const HeroStyles = styled.div`
       p {
         font-size: 1.3rem;
       }
+    }
+    .large-heading {
+      font-size: 5rem; /* Adjust this to make it larger than the usual H1 size */
+      font-weight: bold;
+      text-transform: uppercase;
     }
   }
 `;
@@ -160,13 +171,7 @@ export default function HeroSection() {
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
-            <PText>
-              I am an Aeronautical engineering student at Imperial College
-              London. I love researching, designing and building innovative
-              solutions, with a focus on advanced technologies like VR and data
-              analysis. I enjoy tackling complex engineering challenges and
-              creating cutting-edge solutions
-            </PText>
+            <h1> Engineer | Innovator | Research Pioneer </h1>
             <Button btnText="See my projects" btnLink="/projects" />
           </div>
           <div className="hero__social">
@@ -178,34 +183,16 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/webcifar"
+                    href="https://github.com/dtt23"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    FB
+                    GH
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://twitter.com/webcifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    TW
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://isntagram.com/web_cifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    IG
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://webcifar.com"
+                    href="https://www.linkedin.com/in/dhruva-teja-turaga-463733229/"
                     target="_blank"
                     rel="noreferrer"
                   >
