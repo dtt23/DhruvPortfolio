@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import MapImg from '../assets/images/map.png';
 import PText from './PText';
+import mapIMAGE from '../assets/skill_images/map.png';
 
 const MapStyles = styled.div`
-  background: url(${MapImg}) no-repeat;
+  background: url(${mapIMAGE}) no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 400px;
@@ -60,7 +60,6 @@ export default function Map() {
           </a>
         </div>
       </div>
-      {/* <img src={MapImg} alt="Map" /> */}
     </MapStyles>
   );
 }

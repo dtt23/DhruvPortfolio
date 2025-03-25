@@ -59,9 +59,9 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Dhruva Turaga</h1>
           <PText>
-            A freelance web designer and developer from Chittagong, Bangladesh.
-            I always make websites that have unique designs and also has a good
-            performance rate.
+            Innovative Aeronautical Engineering student at Imperial College
+            London with a passion for research, design, and cutting-edge
+            technology.
           </PText>
         </div>
         <div className="footer__col2">
