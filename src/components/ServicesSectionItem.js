@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import PText from './PText';
 
 const ItemStyles = styled.div`
-  text-align: center;
+  text-align: left;
   .servicesItem__icon {
     svg {
       width: 3rem;

@@ -21,7 +21,7 @@ const AboutSectionStyles = styled.div`
     text-align: left;
   }
   .para {
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-left: 0;
   }
   .aboutSection__buttons {
@@ -56,7 +56,7 @@ const AboutSectionStyles = styled.div`
     }
     .para {
       margin: 0 auto;
-      margin-top: 2rem;
+      margin-top: 5rem;
     }
     .aboutSection__buttons {
       flex-direction: column;
