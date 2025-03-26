@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { MdArrowForward, MdArrowBack } from 'react-icons/md';
 import SectionTitle from './SectionTitle';
-import testimonials from '../assets/data/testimonials';
+import testimonials from '../assets/data/papers';
 
 const TestimonialSectionStyles = styled.div`
   text-align: center;
@@ -117,8 +117,8 @@ export default function TestimonialsSection() {
     <TestimonialSectionStyles>
       <div className="container">
         <SectionTitle
-          subheading="See what I've done"
-          heading="Awards & Certifications"
+          subheading="Experiments or research I have conducted"
+          heading="Academic Works"
         />
 
         <div className="slider-container">

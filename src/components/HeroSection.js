@@ -27,24 +27,25 @@ const HeroStyles = styled.div`
     .hero__name {
       font-family: 'Montserrat SemiBold';
       font-size: 7rem;
-      color: var(--white);
+      color: #fff;
     }
   }
   .hero__img {
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
-    height: 600px;
+    height: 700px;
     margin: 0 auto;
     border: 2px solid var(--gray-1);
   }
   .hero__info {
     margin-top: -16rem;
     color: #fff !important; /* White text */
-    background-color: #add8e6 !important; /* Light blue background */
+    background-color: #6dc1dd !important; /* Light blue background */
   }
   .hero__info h1 {
-    background-color: #add8e6; /* Light blue background */
-    color: #fff; /* White text for <h1> inside .hero__info */
+    background-color: #6dc1dd; /* Light blue background */
+    color: rgb(255, 255, 255); /* White text for <h1> inside .hero__info */
+    margin-left: 130px;
   }
   .hero__social,
   .hero__scrollDown {
