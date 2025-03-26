@@ -1,8 +1,8 @@
 import React from 'react';
 import AboutSection from '../components/AboutSection';
-import ServicesSection from '../components/ServicesSection';
+import Skills from '../components/Skills';
 import ProjectsSection from '../components/ProjectsSection';
-import TestimonialsSection from '../components/TestimonialsSection';
+import Certifications from '../components/Certifications';
 import ContactBanner from '../components/ContactBanner';
 import HeroSection from '../components/HeroSection';
 
@@ -11,9 +11,9 @@ export default function Home() {
     <div>
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
+      <Skills />
       <ProjectsSection />
-      <TestimonialsSection />
+      <Certifications />
       <ContactBanner />
     </div>
   );

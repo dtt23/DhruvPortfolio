@@ -11,14 +11,17 @@ import projects from '../assets/data/projects';
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
+  .container {
+    margin-top: 10rem;
+  }
   padding: 10rem 0;
   .projects__allItems {
     display: flex;
     gap: 3rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
   .swiper-container {
-    padding-top: 8rem;
+    padding-top: 7rem;
     max-width: 100%;
   }
   .swiper-button-prev,

@@ -40,6 +40,10 @@ const ServicesItemsStyles = styled.div`
     font-size: 19px;
     text-align: centre;
   }
+  .container {
+    margin-top: 10rem;
+  }
+
   .details-container {
     padding: 1.5rem;
     flex: 1;
