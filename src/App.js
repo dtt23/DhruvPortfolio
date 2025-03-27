@@ -11,7 +11,7 @@ import Projects from './pages/Projects';
 export default function App() {
   return (
     <>
-      <Router>
+      <Router basename="/DhruvPortfolio">
         <NavMenu />
         <ScrollToTop />
         <Switch>
@@ -24,7 +24,7 @@ export default function App() {
           <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>
