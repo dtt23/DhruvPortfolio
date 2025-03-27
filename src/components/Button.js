@@ -26,7 +26,7 @@ export default function Button({
   btnLink = 'test',
   outline = false,
 }) {
-  const isExternal = btnLink.startsWith('https') || btnLink.startsWith('www');
+  const isExternal = btnLink.startsWith('http') || btnLink.startsWith('www');
 
   return (
     <ButtonStyle outline={outline} className="button-wrapper">
