@@ -11,28 +11,14 @@ import Projects from './pages/Projects';
 export default function App() {
   return (
     <>
-      <Router
-        basename={
-          process.env.NODE_ENV === 'production'
-            ? '/dtt23.github.io/DhruvPortfolio'
-            : '/'
-        }
-      >
+      <Router basename="/DhruvPortfolio">
         <NavMenu />
         <ScrollToTop />
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/projects" component={Projects} />
+          <Route exact path="/" component={Home} />
         </Switch>
         <Footer />
       </Router>

@@ -1,6 +1,6 @@
 {
-  "homepage": "dtt23.github.io/DhruvPortfolio",
   "name": "react-portfolio",
+  "homepage": "https://dtt23.github.io/DhruvPortfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
