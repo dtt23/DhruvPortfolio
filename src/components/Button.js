@@ -26,11 +26,24 @@ export default function Button({
   btnLink = 'test',
   outline = false,
 }) {
+  const isExternal = btnLink.startsWith('http') || btnLink.startsWith('www');
+
   return (
     <ButtonStyle outline={outline} className="button-wrapper">
-      <Link className="button" to={btnLink} target="_blank">
-        {btnText}
-      </Link>
+      {isExternal ? (
+        <a
+          className="button"
+          href={btnLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {btnText}
+        </a>
+      ) : (
+        <Link className="button" to={btnLink}>
+          {btnText}
+        </Link>
+      )}
     </ButtonStyle>
   );
 }
