@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DhruvPortfolio/static/css/main.bc601dbb.css",
-    "main.js": "/DhruvPortfolio/static/js/main.9cb8562d.js",
+    "main.js": "/DhruvPortfolio/static/js/main.001e90bd.js",
     "static/media/Simple_Beams.pdf": "/DhruvPortfolio/static/media/Simple_Beams.453fd6f06e3fee504244.pdf",
     "static/media/EPQ Presentation.pdf": "/DhruvPortfolio/static/media/EPQ Presentation.4cc40f5478cfde2a8381.pdf",
     "static/media/about-page-img.jpg": "/DhruvPortfolio/static/media/about-page-img.a8c855c33ce36a8d913e.jpg",
@@ -60,10 +60,10 @@
     "static/media/scroll-down-arrow.svg": "/DhruvPortfolio/static/media/scroll-down-arrow.b013ca458cf827f32732e3ce3c691d03.svg",
     "static/media/social-media-arrow.svg": "/DhruvPortfolio/static/media/social-media-arrow.f5e093ceb316785e72dc77d75e5ed04f.svg",
     "main.bc601dbb.css.map": "/DhruvPortfolio/static/css/main.bc601dbb.css.map",
-    "main.9cb8562d.js.map": "/DhruvPortfolio/static/js/main.9cb8562d.js.map"
+    "main.001e90bd.js.map": "/DhruvPortfolio/static/js/main.001e90bd.js.map"
   },
   "entrypoints": [
     "static/css/main.bc601dbb.css",
-    "static/js/main.9cb8562d.js"
+    "static/js/main.001e90bd.js"
   ]
 }
