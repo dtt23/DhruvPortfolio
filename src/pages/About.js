@@ -243,11 +243,12 @@ export default function About() {
                     </p>
                     <p className="date">October, 2023 - Current</p>
                     <p className="insideP">
-                      Currently pursuing my Masters in Aeronautical Engineering.
+                      {'>'} Currently pursuing my Masters in Aeronautical
+                      Engineering.
                     </p>
                     <p className="insideP">
-                      Helped the electronics team within ICL Rocketry, won an
-                      engineering hackathon from CGCU,
+                      {'>'} Helped the electronics team within ICL Rocketry, won
+                      an engineering hackathon from CGCU,
                     </p>
                     <div className="tags">
                       <span>Mechanics</span>
@@ -270,12 +271,12 @@ export default function About() {
                     <p className="degree">A-Levels (3A*s, 2As)</p>
                     <p className="date">September, 2021 - June, 2023</p>
                     <p className="insideP">
-                      I achieved one of the best A-Level results, excelling in
-                      subjects that showcase my analytical thinking,
-                      problem-solving skills, and technical expertise.
+                      {'>'} I achieved one of the best A-Level results,
+                      excelling in subjects that showcase my analytical
+                      thinking, problem-solving skills, and technical expertise.
                     </p>
                     <p className="insideP">
-                      Completed Bronze, Silver and Gold Duke of Edinburgh,
+                      {'>'} Completed Bronze, Silver and Gold Duke of Edinburgh,
                       Captained the Ritangle challenge, part of competitive
                       swimming in Peterborough (COPS)
                     </p>
@@ -296,13 +297,13 @@ export default function About() {
                     <p className="degree">GCSE (10 - 9s, 1 - 7)</p>
                     <p className="date">September, 2016 - June, 2021</p>
                     <p className="insideP">
-                      I achieved top grades in my GCSEs, demonstrating a strong
-                      academic foundation and dedication to excellence across
-                      multiple subjects.
+                      {'>'} I achieved top grades in my GCSEs, demonstrating a
+                      strong academic foundation and dedication to excellence
+                      across multiple subjects.
                     </p>
                     <p className="insideP">
-                      Integral part of VEX Robotics for 3 years, Lego League and
-                      started independent projects.
+                      {'>'} Integral part of VEX Robotics for 3 years, Lego
+                      League and started independent projects.
                     </p>
                     <div className="tags">
                       <span>Mathematics 9</span>
