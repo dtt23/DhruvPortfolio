@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import AboutSection from '../components/AboutSection';
 import Skills from '../components/Skills';
 import ProjectsSection from '../components/ProjectsSection';

@@ -126,6 +126,10 @@ export default function Footer() {
                 title: 'Instagram',
                 path: 'http://instagram.com',
               },
+              {
+                title: 'LinkedIn',
+                path: 'https://www.linkedin.com/in/dhruva-teja-turaga-463733229/',
+              },
             ]}
           />
         </div>

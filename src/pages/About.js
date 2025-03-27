@@ -30,6 +30,7 @@ const AboutPageStyles = styled.div`
   .about__heading {
     font-size: 3.6rem;
     margin-bottom: 3rem;
+    color: #42a5f5;
   }
   .about__info {
     margin-bottom: 4rem;
@@ -102,6 +103,11 @@ const AboutPageStyles = styled.div`
     width: 48%; /* Ensures both sections are evenly sized */
   }
 
+  h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
   /* Section Headings */
   h2 {
     font-size: 18px;
@@ -172,7 +178,7 @@ const AboutPageStyles = styled.div`
     font-size: 13px;
     border-radius: 4px;
   }
-  p {
+  .insideP {
     color: rgb(30, 30, 30);
     font-size: 12px;
   }
@@ -226,7 +232,7 @@ export default function About() {
           </div>
           <div className="about__info__items">
             <div className="section">
-              <h2>Education</h2>
+              <h1>Education</h1>
               <div className="timeline">
                 <div className="timeline-item">
                   <div className="dot" />
@@ -236,10 +242,10 @@ export default function About() {
                       Masters in Aeronautical Engineering
                     </p>
                     <p className="date">October, 2023 - Current</p>
-                    <p>
+                    <p className="insideP">
                       Currently pursuing my Masters in Aeronautical Engineering.
                     </p>
-                    <p>
+                    <p className="insideP">
                       Helped the electronics team within ICL Rocketry, won an
                       engineering hackathon from CGCU,
                     </p>
@@ -263,12 +269,12 @@ export default function About() {
                     <h3>Bourne Grammar School, Lincolnshire</h3>
                     <p className="degree">A-Levels (3A*s, 2As)</p>
                     <p className="date">September, 2021 - June, 2023</p>
-                    <p>
+                    <p className="insideP">
                       I achieved one of the best A-Level results, excelling in
                       subjects that showcase my analytical thinking,
                       problem-solving skills, and technical expertise.
                     </p>
-                    <p>
+                    <p className="insideP">
                       Completed Bronze, Silver and Gold Duke of Edinburgh,
                       Captained the Ritangle challenge, part of competitive
                       swimming in Peterborough (COPS)
@@ -289,12 +295,12 @@ export default function About() {
                     <h3>Bourne Grammar School, Lincolnshire</h3>
                     <p className="degree">GCSE (10 - 9s, 1 - 7)</p>
                     <p className="date">September, 2016 - June, 2021</p>
-                    <p>
+                    <p className="insideP">
                       I achieved top grades in my GCSEs, demonstrating a strong
                       academic foundation and dedication to excellence across
                       multiple subjects.
                     </p>
-                    <p>
+                    <p className="insideP">
                       Integral part of VEX Robotics for 3 years, Lego League and
                       started independent projects.
                     </p>
@@ -316,7 +322,7 @@ export default function About() {
               </div>
             </div>
             <div className="section">
-              <h2>Experiences</h2>
+              <h1>Experiences</h1>
               <div className="timeline">
                 <div className="timeline-item">
                   <div className="dot" />
@@ -326,17 +332,17 @@ export default function About() {
                       StudentShapers Intern and UG Teaching Assistant
                     </p>
                     <p className="date">July, 2024 - October, 2024</p>
-                    <p>
+                    <p className="insideP">
                       {'>'} Mastered C# programming, Unity 3D game development
                       and the cutting-edge ViRSE framework.
                     </p>
-                    <p>
+                    <p className="insideP">
                       {'>'} Collaborated with renowned professors on advanced
                       virtual reality, focusing on the dynamic modal analysis of
                       free oscillations in structures such as beams and entire
                       aircraft.
                     </p>
-                    <p>
+                    <p className="insideP">
                       {'>'} Applied innovative VR techniques to simulate and
                       test structural effectiveness, contributing to
                       groundbreaking research and curriculum development at
@@ -367,13 +373,13 @@ export default function About() {
                     <h3>Compare the Market, Work from Home</h3>
                     <p className="degree">Data Analyst Shadowing</p>
                     <p className="date">June, 2022 - July, 2022</p>
-                    <p>
+                    <p className="insideP">
                       {'>'} Worked closely with the data science team, gaining
                       practical experience in data cleaning, manipulation, and
                       visualisation using libraries such as Pandas and
                       Matplotlib.
                     </p>
-                    <p>
+                    <p className="insideP">
                       {'>'} Actively contributed to data-driven decision-making
                       processes using statistical analysis to uncover insights
                       in real-world business scenarios.
