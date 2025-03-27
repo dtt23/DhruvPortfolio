@@ -121,7 +121,7 @@ const TestimonialSectionStyles = styled.div`
     background: #222;
     border-radius: 10px;
     padding: 15px;
-    width: calc(77% / 2);
+    width: calc(76% / 2);
     display: flex;
     align-items: centre;
     flex-direction: row;
@@ -152,7 +152,7 @@ const TestimonialSectionStyles = styled.div`
 
   h3 {
     color: #42a5f5;
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 15px;
   }
 
