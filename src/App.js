@@ -11,7 +11,7 @@ import Projects from './pages/Projects';
 export default function App() {
   return (
     <>
-      <Router>
+      <Router basename="/DhruvPortfolio/">
         <NavMenu />
         <ScrollToTop />
         <Switch>
