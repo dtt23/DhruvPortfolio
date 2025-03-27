@@ -21,6 +21,9 @@ const TestimonialSectionStyles = styled.div`
     display: flex;
     transition: transform 0.8s ease-in-out;
     gap: 1px;
+    width: calc(
+      100% * (testimonials.length / visibleTestimonials)
+    ); /* Ensure width scales */
   }
 
   .slider-item {
@@ -91,16 +94,113 @@ const TestimonialSectionStyles = styled.div`
   .slider-control:hover {
     color: gray;
   }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #ddd;
+    padding: 20px;
+  }
+
+  h2 {
+    color: #42a5f5;
+  }
+
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .publications-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .publication {
+    background: #222;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(77% / 2);
+    display: flex;
+    align-items: centre;
+    flex-direction: row;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 40px;
+    flex-shrink: 0;
+  }
+
+  .image-container {
+    position: relative;
+    width: 170px; /* Smaller image */
+    height: 240px;
+    flex-shrink: 0;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .content {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  h3 {
+    color: #42a5f5;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .buttons {
+    margin-top: 10px;
+  }
+
+  button {
+    background: #444;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background: #666;
+  }
+
+  .status {
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 00px;
+    margin-top: 10px;
+    display: block;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
 `;
 
 export default function TestimonialsSection() {
+  const openLink = (url) => {
+    if (url) {
+      window.open(url, '_blank'); // Opens the link in a new tab
+    }
+  };
+
   const [startIndex, setStartIndex] = useState(0);
-  const visibleTestimonials = 3;
+  const visibleTestimonials = 2;
 
   function handleNext() {
     setStartIndex((prevIndex) =>
       prevIndex + 1 > testimonials.length - visibleTestimonials
-        ? 0
+        ? prevIndex // Stop at the last valid position
         : prevIndex + 1
     );
   }
@@ -108,7 +208,7 @@ export default function TestimonialsSection() {
   function handlePrev() {
     setStartIndex((prevIndex) =>
       prevIndex === 0
-        ? testimonials.length - visibleTestimonials
+        ? prevIndex // Stop at the first item
         : prevIndex - 1
     );
   }
@@ -130,20 +230,48 @@ export default function TestimonialsSection() {
               }%)`,
             }}
           >
-            {testimonials.map((item, index) => (
-              <div key={index} className="slider-item">
-                <div className="service-card">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="card-image"
-                  />
-                  <h1 className="card-title">{item.title}</h1>
-                  <h3 className="card-title">{item.org}</h3>
-                  <p className="card-text">{item.desc}</p>
-                  <span className="card-number">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
+            {testimonials.map((pub) => (
+              <div className="publication" key={pub.id}>
+                <div className="image-container">
+                  <img src={pub.image} alt={pub.title} />
+                </div>
+                <div className="content">
+                  <h3>{pub.title}</h3>
+                  <p>
+                    <strong>{pub.authors}</strong>
+                  </p>
+                  <p>
+                    <em>{pub.conference}</em>
+                  </p>
+                  <div className="buttons">
+                    {pub.links.pdf && (
+                      <button
+                        type="button"
+                        onClick={() => openLink(pub.links.pdf)}
+                      >
+                        PDF
+                      </button>
+                    )}
+                    {pub.links.code && (
+                      <button
+                        type="button"
+                        onClick={() => openLink(pub.links.code)}
+                      >
+                        Presentation
+                      </button>
+                    )}
+                    {pub.links.projectPage && (
+                      <button
+                        type="button"
+                        onClick={() => openLink(pub.links.projectPage)}
+                      >
+                        Production Log
+                      </button>
+                    )}
+                    <span className="status" style={{ color: pub.statusColor }}>
+                      {pub.status}
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}

@@ -12,7 +12,7 @@ SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
   .container {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   padding: 10rem 0;
   .projects__allItems {
@@ -64,7 +64,7 @@ export default function ProjectsSection() {
   return (
     <ProjectSectionStyle>
       <div className="container">
-        <SectionTitle subheading="some of my recent works" heading="Projects" />
+        <SectionTitle subheading="Some of my recent works" heading="Projects" />
         <div className="projects__allItems">
           <Swiper
             spaceBetween={30}
@@ -86,7 +86,7 @@ export default function ProjectsSection() {
             }}
           >
             {projects.map((project, index) => {
-              if (index >= 5) return;
+              if (index >= 7 || project.cs === 1) return;
               return (
                 <SwiperSlide key={project.id}>
                   <ProjectItem

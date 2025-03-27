@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import PText from '../components/PText';
 import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.jpg';
-import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
@@ -70,37 +68,155 @@ const AboutPageStyles = styled.div`
       font-size: 3rem;
     }
   }
+  .entry .body {
+    margin: 0 0 1em;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .item-title {
+      margin-top: 10px !important;
+    }
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(227, 135, 135);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+
+  /* Main Layout */
+  .about__info__items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px; /* Space between sections */
+    margin-top: 90px;
+    margin-bottom: 30px;
+  }
+
+  /* Section Styling */
+  .section {
+    width: 48%; /* Ensures both sections are evenly sized */
+  }
+
+  /* Section Headings */
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  /* Timeline */
+  .timeline {
+    border-left: 3px solid #bbb;
+    margin-left: 15px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  /* Orange Dots */
+  .dot {
+    width: 16px;
+    height: 16px;
+    background-color: #e67e22;
+    border-radius: 50%;
+    position: absolute;
+    left: -29.5px;
+    top: 15px;
+  }
+
+  /* Content */
+  .content {
+    background: rgb(145, 157, 171);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: blue;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .degree {
+    font-size: 15px;
+    color: #555;
+    font-weight: bold;
+  }
+
+  .date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  /* Tags */
+  .tags {
+    margin-top: 10px;
+  }
+
+  .tags span {
+    display: inline-block;
+    background: #dde9f6;
+    color: #333;
+    padding: 6px 10px;
+    margin: 4px 4px 0 0;
+    font-size: 13px;
+    border-radius: 4px;
+  }
+  p {
+    color: rgb(30, 30, 30);
+    font-size: 12px;
+  }
 `;
 
 export default function About() {
+  const myStyle = {
+    color: 'blue',
+    fontSize: '16px',
+    backgroundColor: 'lightgray',
+  };
   return (
     <>
       <AboutPageStyles>
         <div className="container">
           <div className="top-section">
             <div className="left">
-              <p className="about__subheading">
+              <h2 className="about__subheading">
                 Hi, I am <span>Dhruva Turaga</span>
-              </p>
-              <h2 className="about__heading">Engineering Student</h2>
+              </h2>
+              <h2 className="about__heading">
+                Engineer | Innovator | Research Pioneer
+              </h2>
               <div className="about__info">
-                <PText>
-                  I am from chittagong, Bangladesh. A place of beauty and
-                  nature. Since my childhood, i love art and design. I always
-                  try to design stuff with my unique point of view. I also love
-                  to create things that can be usefull to others.
+                <h2>
+                  I am an Aeronautical Engineering student at Imperial College
+                  London with a passion for technology and innovation. My
+                  experience includes mechanical as well as electrical design,
+                  data analysis and virtual simulations, where I tackle complex
+                  challenges hands-on.
                   <br /> <br />
-                  I started coding since I was in high school. Coding is also an
-                  art for me. I love it and now I have the opportunity to design
-                  along with the coding. I find it really interesting and I
-                  enjoyed the process a lot.
+                  I enjoy solving problems through technology, whether it's
+                  developing simulations, optimising designs or working with
+                  AI-driven tools. My hands-on approach and adaptability help me
+                  tackle challenges efficiently while continuously expanding my
+                  skillset.
                   <br />
-                  <br />
-                  My vision is to make the world a better place. Now almost
-                  everything is becoming better than ever. It is time for us to
-                  create more good stuff that helps the world to become a better
-                  place.
-                </PText>
+                  <br />I thrive in fast paced environments where I can apply my
+                  technical skills to real-world challenges. My curiosity,
+                  adaptability, and problem-solving mindset enable me to
+                  contribute effectively while continuously learning. I am eager
+                  to bring fresh ideas, collaborate with experts to make a
+                  lasting impact.
+                </h2>
               </div>
               <Button btnText="Download CV" btnLink="/CV.pdf" />
             </div>
@@ -109,53 +225,170 @@ export default function About() {
             </div>
           </div>
           <div className="about__info__items">
-            <div className="about__info__item">
-              <h1 className="about__info__heading">Education</h1>
+            <div className="section">
+              <h2>Education</h2>
+              <div className="timeline">
+                <div className="timeline-item">
+                  <div className="dot" />
+                  <div className="content">
+                    <h3>Imperial College London, London</h3>
+                    <p className="degree">
+                      Masters in Aeronautical Engineering
+                    </p>
+                    <p className="date">October, 2023 - Current</p>
+                    <p>
+                      Currently pursuing my Masters in Aeronautical Engineering.
+                    </p>
+                    <p>
+                      Helped the electronics team within ICL Rocketry, won an
+                      engineering hackathon from CGCU,
+                    </p>
+                    <div className="tags">
+                      <span>Mechanics</span>
+                      <span>Materials</span>
+                      <span>Structures</span>
+                      <span>Mathematics</span>
+                      <span>Thermodynamics</span>
+                      <span>Intro to Aerospace</span>
+                      <span>Aerodyanamics</span>
+                      <span>CS and Numerical Methods</span>
+                      <span>Engineering Practice</span>
+                    </div>
+                  </div>
+                </div>
 
-              <AboutInfoItem
-                title="School"
-                items={['Nasirabad Govt. High School, Chattogram']}
-              />
-              <AboutInfoItem
-                title="Collage"
-                items={['BAF Shaheen College Chattogram']}
-              />
-              <AboutInfoItem
-                title="Varsity"
-                items={['University Of Chitiagong']}
-              />
+                <div className="timeline-item">
+                  <div className="dot" />
+                  <div className="content">
+                    <h3>Bourne Grammar School, Lincolnshire</h3>
+                    <p className="degree">A-Levels (3A*s, 2As)</p>
+                    <p className="date">September, 2021 - June, 2023</p>
+                    <p>
+                      I achieved one of the best A-Level results, excelling in
+                      subjects that showcase my analytical thinking,
+                      problem-solving skills, and technical expertise.
+                    </p>
+                    <p>
+                      Completed Bronze, Silver and Gold Duke of Edinburgh,
+                      Captained the Ritangle challenge, part of competitive
+                      swimming in Peterborough (COPS)
+                    </p>
+                    <div className="tags">
+                      <span>Extended Project Qualification A*</span>
+                      <span>Mathematics A*</span>
+                      <span>Further Mathematics A</span>
+                      <span>Computer Science A*</span>
+                      <span>Physics A</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="timeline-item">
+                  <div className="dot" />
+                  <div className="content">
+                    <h3>Bourne Grammar School, Lincolnshire</h3>
+                    <p className="degree">GCSE (10 - 9s, 1 - 7)</p>
+                    <p className="date">September, 2016 - June, 2021</p>
+                    <p>
+                      I achieved top grades in my GCSEs, demonstrating a strong
+                      academic foundation and dedication to excellence across
+                      multiple subjects.
+                    </p>
+                    <p>
+                      Integral part of VEX Robotics for 3 years, Lego League and
+                      started independent projects.
+                    </p>
+                    <div className="tags">
+                      <span>Mathematics 9</span>
+                      <span>Further Mathematics 9</span>
+                      <span>English Language 9</span>
+                      <span>English Literature 9</span>
+                      <span>Biology 9</span>
+                      <span>Chemistry 9</span>
+                      <span>Physics 9</span>
+                      <span>Spanish 7</span>
+                      <span>Design Technology 9</span>
+                      <span>Computer Science 9</span>
+                      <span>Geography 9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="about__info__item">
-              <h1 className="about__info__heading">My Skills</h1>
+            <div className="section">
+              <h2>Experiences</h2>
+              <div className="timeline">
+                <div className="timeline-item">
+                  <div className="dot" />
+                  <div className="content">
+                    <h3>Imperial College London, London</h3>
+                    <p className="degree">
+                      StudentShapers Intern and UG Teaching Assistant
+                    </p>
+                    <p className="date">July, 2024 - October, 2024</p>
+                    <p>
+                      {'>'} Mastered C# programming, Unity 3D game development
+                      and the cutting-edge ViRSE framework.
+                    </p>
+                    <p>
+                      {'>'} Collaborated with renowned professors on advanced
+                      virtual reality, focusing on the dynamic modal analysis of
+                      free oscillations in structures such as beams and entire
+                      aircraft.
+                    </p>
+                    <p>
+                      {'>'} Applied innovative VR techniques to simulate and
+                      test structural effectiveness, contributing to
+                      groundbreaking research and curriculum development at
+                      Imperial.
+                    </p>
+                    <a
+                      href="https://drive.google.com/file/d/1nU9aNKe41nCarvsndcqIXfCdGjXYYeho/view?usp=sharing"
+                      style={myStyle}
+                    >
+                      Click here to view the final outcome
+                    </a>
 
-              <AboutInfoItem
-                title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT']}
-              />
-              <AboutInfoItem
-                title="BackEnd"
-                items={['Node', 'Express', 'PHP']}
-              />
-              <AboutInfoItem
-                title="Design"
-                items={['Photoshop', 'After Effects', 'Figma']}
-              />
-            </div>
-            <div className="about__info__item">
-              <h1 className="about__info__heading">Experiences</h1>
+                    <div className="tags">
+                      <span>C#</span>
+                      <span>Unity</span>
+                      <span>ViRSE Framework</span>
+                      <span>Structures - Free Oscillations</span>
+                      <span>Blender</span>
+                      <span>Team Collaboration</span>
+                      <span>Finite Element Analysis (FEA)</span>
+                    </div>
+                  </div>
+                </div>
 
-              <AboutInfoItem
-                title="2010-2012"
-                items={['junior developer at web Cifar']}
-              />
-              <AboutInfoItem
-                title="2012-2016"
-                items={['Front end developer at web Cifar ']}
-              />
-              <AboutInfoItem
-                title="2016-"
-                items={['Freelance web Developer']}
-              />
+                <div className="timeline-item">
+                  <div className="dot" />
+                  <div className="content">
+                    <h3>Compare the Market, Work from Home</h3>
+                    <p className="degree">Data Analyst Shadowing</p>
+                    <p className="date">June, 2022 - July, 2022</p>
+                    <p>
+                      {'>'} Worked closely with the data science team, gaining
+                      practical experience in data cleaning, manipulation, and
+                      visualisation using libraries such as Pandas and
+                      Matplotlib.
+                    </p>
+                    <p>
+                      {'>'} Actively contributed to data-driven decision-making
+                      processes using statistical analysis to uncover insights
+                      in real-world business scenarios.
+                    </p>
+                    <div className="tags">
+                      <span>Python 3</span>
+                      <span>Pandas</span>
+                      <span>Matplotlib</span>
+                      <span>Visual Studio</span>
+                      <span>Data presentation</span>
+                      <span>GitHub</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
