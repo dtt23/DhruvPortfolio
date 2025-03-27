@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.jpg';
 import ContactBanner from '../components/ContactBanner';
 
@@ -182,6 +181,23 @@ const AboutPageStyles = styled.div`
     color: rgb(30, 30, 30);
     font-size: 12px;
   }
+  .button {
+    font-size: 2.2rem;
+    background-color: ${(props) =>
+      props.outline ? 'transparent' : 'var(--gray-1)'};
+    padding: 0.7em 2em;
+    border: 2px solid var(--gray-1);
+    border-radius: 8px;
+    display: inline-block;
+    pointer-events: auto;
+    cursor: pointer;
+    color: ${(props) => (props.outline ? 'var(--gray-1)' : 'black')};
+  }
+  @media only screen and (max-width: 768px) {
+    .button {
+      font-size: 1.8rem;
+    }
+  }
 `;
 
 export default function About() {
@@ -189,6 +205,11 @@ export default function About() {
     color: 'blue',
     fontSize: '16px',
     backgroundColor: 'lightgray',
+  };
+  const openLink = (url) => {
+    if (url) {
+      window.open(url, '_blank'); // Opens the link in a new tab
+    }
   };
   return (
     <>
@@ -224,7 +245,17 @@ export default function About() {
                   lasting impact.
                 </h2>
               </div>
-              <Button btnText="Download CV" btnLink="/CV.pdf" />
+              <button
+                className="button"
+                type="button"
+                onClick={() =>
+                  openLink(
+                    'https://drive.google.com/file/d/1KT8xBD1bWxjb-y708hUalK9hJDsGYKcc/view?usp=drive_link'
+                  )
+                }
+              >
+                Download CV
+              </button>
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
