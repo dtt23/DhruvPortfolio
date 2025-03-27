@@ -35,7 +35,7 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'Task Management App',
+    name: 'Tasker',
     desc: 'A Task Management app developed by conducting in-depth market research, designing UI prototypes and refining user experience through usability testing.',
     img: appImg,
     cs: 0,
