@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dtt23.github.io/DhruvPortfolio/static/css/main.bc601dbb.css",
-    "main.js": "/dtt23.github.io/DhruvPortfolio/static/js/main.fd356559.js",
+    "main.js": "/dtt23.github.io/DhruvPortfolio/static/js/main.c941c038.js",
     "static/media/Simple_Beams.pdf": "/dtt23.github.io/DhruvPortfolio/static/media/Simple_Beams.453fd6f06e3fee504244.pdf",
     "static/media/EPQ Presentation.pdf": "/dtt23.github.io/DhruvPortfolio/static/media/EPQ Presentation.4cc40f5478cfde2a8381.pdf",
     "static/media/about-page-img.jpg": "/dtt23.github.io/DhruvPortfolio/static/media/about-page-img.a8c855c33ce36a8d913e.jpg",
@@ -60,10 +60,10 @@
     "static/media/scroll-down-arrow.svg": "/dtt23.github.io/DhruvPortfolio/static/media/scroll-down-arrow.b013ca458cf827f32732e3ce3c691d03.svg",
     "static/media/social-media-arrow.svg": "/dtt23.github.io/DhruvPortfolio/static/media/social-media-arrow.f5e093ceb316785e72dc77d75e5ed04f.svg",
     "main.bc601dbb.css.map": "/dtt23.github.io/DhruvPortfolio/static/css/main.bc601dbb.css.map",
-    "main.fd356559.js.map": "/dtt23.github.io/DhruvPortfolio/static/js/main.fd356559.js.map"
+    "main.c941c038.js.map": "/dtt23.github.io/DhruvPortfolio/static/js/main.c941c038.js.map"
   },
   "entrypoints": [
     "static/css/main.bc601dbb.css",
-    "static/js/main.fd356559.js"
+    "static/js/main.c941c038.js"
   ]
 }
