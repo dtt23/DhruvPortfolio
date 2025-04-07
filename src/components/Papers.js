@@ -199,17 +199,17 @@ export default function TestimonialsSection() {
 
   function handleNext() {
     setStartIndex((prevIndex) =>
-      prevIndex + 1 > testimonials.length - visibleTestimonials
-        ? prevIndex // Stop at the last valid position
-        : prevIndex + 1
+      prevIndex + 1 < testimonials.length - (visibleTestimonials - 1)
+        ? prevIndex + 1 // Stop at the last valid position
+        : prevIndex
     );
   }
 
   function handlePrev() {
     setStartIndex((prevIndex) =>
-      prevIndex === 0
-        ? prevIndex // Stop at the first item
-        : prevIndex - 1
+      prevIndex > 0
+        ? prevIndex - 1 // Stop at the first item
+        : prevIndex
     );
   }
 
@@ -225,9 +225,7 @@ export default function TestimonialsSection() {
           <div
             className="slider-content"
             style={{
-              transform: `translateX(-${
-                startIndex * (100 / visibleTestimonials)
-              }%)`,
+              transform: `translateX(-${startIndex * (100 / 2.4)}%)`,
             }}
           >
             {testimonials.map((pub) => (

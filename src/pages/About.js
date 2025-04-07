@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import AboutImg from '../assets/images/about-page-img.jpg';
 import ContactBanner from '../components/ContactBanner';
+import CV from '../assets/documents/CV.pdf';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -248,11 +249,7 @@ export default function About() {
               <button
                 className="button"
                 type="button"
-                onClick={() =>
-                  openLink(
-                    'https://drive.google.com/file/d/1KT8xBD1bWxjb-y708hUalK9hJDsGYKcc/view?usp=drive_link'
-                  )
-                }
+                onClick={() => openLink(CV)}
               >
                 Download CV
               </button>
@@ -299,7 +296,7 @@ export default function About() {
                   <div className="dot" />
                   <div className="content">
                     <h3>Bourne Grammar School, Lincolnshire</h3>
-                    <p className="degree">A-Levels (3A*s, 2As)</p>
+                    <p className="degree">A-Levels (2A*s, 3As)</p>
                     <p className="date">September, 2021 - June, 2023</p>
                     <p className="insideP">
                       {'>'} I achieved one of the best A-Level results,
@@ -315,7 +312,7 @@ export default function About() {
                       <span>Extended Project Qualification A*</span>
                       <span>Mathematics A*</span>
                       <span>Further Mathematics A</span>
-                      <span>Computer Science A*</span>
+                      <span>Computer Science A</span>
                       <span>Physics A</span>
                     </div>
                   </div>
