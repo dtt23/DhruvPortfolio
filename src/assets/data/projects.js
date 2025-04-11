@@ -10,6 +10,7 @@ import AlexaImg from '../images/alexa.jpg';
 import CameraImg from '../images/SCam.png';
 import CarImg from '../images/BCar.png';
 import TurbineImg from '../images/WTurbine.png';
+import TrainerImg from '../images/FTrainer.png';
 
 const projects = [
   {
@@ -25,6 +26,13 @@ const projects = [
     desc: 'Using machine learning and real-time tracking to adjust speed, angle, and trajectory, providing precise and adaptive training for badminton players.',
     img: ComingSoonImg,
     cs: 1,
+  },
+  {
+    id: uuidv4(),
+    name: 'Footwork Trainer',
+    desc: 'Footwork Trainer is a browser-based tool that helps badminton players improve footwork, agility, and reaction speed using randomized cues and adjustable timing. View at: https://dtt23.github.io/footworkTrainer/',
+    img: TrainerImg,
+    cs: 0,
   },
   {
     id: uuidv4(),
