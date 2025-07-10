@@ -32,7 +32,7 @@ const testimonials = [
     status: 'Aerodynamics 85%',
     statusColor: '#f39c12',
   },
-  {
+  /* {
     id: 3,
     title: 'Simple Beams',
     authors: 'Dhruva Teja Turaga - Imperial College London',
@@ -42,8 +42,8 @@ const testimonials = [
     links: { pdf: simpleBeamsEssay },
     status: 'Structures 90%',
     statusColor: '#f39c12',
-  },
-  {
+  }, */
+  /* {
     id: 4,
     title: 'Strain, Tensile and Hardness',
     authors: 'Dhruva Teja Turaga - Imperial College London',
@@ -52,6 +52,6 @@ const testimonials = [
     image: materialsImg,
     links: { pdf: materialsEssay },
     statusColor: '#f39c12',
-  },
+  }, */
 ];
 export default testimonials;
