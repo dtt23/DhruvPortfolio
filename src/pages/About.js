@@ -356,6 +356,44 @@ export default function About() {
                 <div className="timeline-item">
                   <div className="dot" />
                   <div className="content">
+                    <h3>South Kensington, London</h3>
+                    <p className="degree">InXTech Technical Fellow</p>
+                    <p className="date">June, 2025 - October, 2025</p>
+                    <p className="insideP">
+                      {'>'} Mostly working on the Electronics Team by designing
+                      and optimising power distribution PCBs, schematics and
+                      management systems, implementing actuator control logic
+                      and integrating sensor telemetry for the prototype.
+                    </p>
+                    <p className="insideP">
+                      {'>'} Supported the Mechanical Team with CAD modelling, 3D
+                      printing and refinement of a new robotic prototype,
+                      incorporating design feedback to improve structure
+                      mechanisms.
+                    </p>
+                    <p className="insideP">
+                      {'>'} Worked with the Data Validation Team to analyse
+                      sensor datasets, develop machine learning models for
+                      anomaly detection and performance optimisation and
+                      streamline data processing pipelines for faster insights
+                      on board.
+                    </p>
+
+                    <div className="tags">
+                      <span>KiCAD</span>
+                      <span>C++</span>
+                      <span>Python</span>
+                      <span>3D Printing</span>
+                      <span>Lasercutting</span>
+                      <span>Solidworks</span>
+                      <span>Team Collaboration</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="timeline-item">
+                  <div className="dot" />
+                  <div className="content">
                     <h3>Imperial College London, London</h3>
                     <p className="degree">
                       StudentShapers Intern and UG Teaching Assistant
