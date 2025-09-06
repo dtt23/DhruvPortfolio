@@ -356,9 +356,9 @@ export default function About() {
                 <div className="timeline-item">
                   <div className="dot" />
                   <div className="content">
-                    <h3>South Kensington, London</h3>
+                    <h3>InXploratus Technologies</h3>
                     <p className="degree">InXTech Technical Fellow</p>
-                    <p className="date">June, 2025 - October, 2025</p>
+                    <p className="date">June, 2025 - Present</p>
                     <p className="insideP">
                       {'>'} Mostly working on the Electronics Team by designing
                       and optimising power distribution PCBs, schematics and
