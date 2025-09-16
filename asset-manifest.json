@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DhruvPortfolio/static/css/main.bc601dbb.css",
-    "main.js": "/DhruvPortfolio/static/js/main.f2bdd373.js",
+    "main.js": "/DhruvPortfolio/static/js/main.f06fcfb1.js",
     "static/media/Simple_Beams.pdf": "/DhruvPortfolio/static/media/Simple_Beams.453fd6f06e3fee504244.pdf",
     "static/media/EPQ Presentation.pdf": "/DhruvPortfolio/static/media/EPQ Presentation.4cc40f5478cfde2a8381.pdf",
     "static/media/about-page-img.jpg": "/DhruvPortfolio/static/media/about-page-img.a8c855c33ce36a8d913e.jpg",
@@ -27,8 +27,10 @@
     "static/media/mpl.png": "/DhruvPortfolio/static/media/mpl.db3c39ed0d92ba88bcf0.png",
     "static/media/python.png": "/DhruvPortfolio/static/media/python.3eb43090d7d5aa5dc53d.png",
     "static/media/RGame.png": "/DhruvPortfolio/static/media/RGame.202fa748a1ac2749f288.png",
+    "static/media/laser-based_trainer.png": "/DhruvPortfolio/static/media/laser-based_trainer.46b61fd906f92bbe65a1.png",
     "static/media/as.png": "/DhruvPortfolio/static/media/as.64907613cec0ed0886a8.png",
     "static/media/cs.png": "/DhruvPortfolio/static/media/cs.dcfd7cba519fc03651fb.png",
+    "static/media/ASNode.png": "/DhruvPortfolio/static/media/ASNode.45b3679f0789aed351cc.png",
     "static/media/comingsoon.png": "/DhruvPortfolio/static/media/comingsoon.a3a2f33a7b5106b84a33.png",
     "static/media/SCam.png": "/DhruvPortfolio/static/media/SCam.d37b3b3de20dd3489e3c.png",
     "static/media/css.png": "/DhruvPortfolio/static/media/css.19c8605d6b2861f5fbe0.png",
@@ -46,7 +48,7 @@
     "static/media/latex.svg": "/DhruvPortfolio/static/media/latex.fd0d36346982bcbd2742993e53929c25.svg",
     "static/media/FTrainer.png": "/DhruvPortfolio/static/media/FTrainer.e7dfd09f554d9de4eb6c.png",
     "static/media/ex.png": "/DhruvPortfolio/static/media/ex.392fbbc50e7de5107df3.png",
-    "static/media/CV.pdf": "/DhruvPortfolio/static/media/CV.941379d255073b278077.pdf",
+    "static/media/CV.pdf": "/DhruvPortfolio/static/media/CV.6da57427264ed9e6618f.pdf",
     "static/media/pt.png": "/DhruvPortfolio/static/media/pt.fa4c960de95a4705c7ac.png",
     "static/media/alexa.jpg": "/DhruvPortfolio/static/media/alexa.eadb86d9c71f048a0c19.jpg",
     "static/media/java.png": "/DhruvPortfolio/static/media/java.09f5a80c7f42f1c28839.png",
@@ -62,10 +64,10 @@
     "static/media/scroll-down-arrow.svg": "/DhruvPortfolio/static/media/scroll-down-arrow.b013ca458cf827f32732e3ce3c691d03.svg",
     "static/media/social-media-arrow.svg": "/DhruvPortfolio/static/media/social-media-arrow.f5e093ceb316785e72dc77d75e5ed04f.svg",
     "main.bc601dbb.css.map": "/DhruvPortfolio/static/css/main.bc601dbb.css.map",
-    "main.f2bdd373.js.map": "/DhruvPortfolio/static/js/main.f2bdd373.js.map"
+    "main.f06fcfb1.js.map": "/DhruvPortfolio/static/js/main.f06fcfb1.js.map"
   },
   "entrypoints": [
     "static/css/main.bc601dbb.css",
-    "static/js/main.f2bdd373.js"
+    "static/js/main.f06fcfb1.js"
   ]
 }
