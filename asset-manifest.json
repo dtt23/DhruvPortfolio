@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DhruvPortfolio/static/css/main.bc601dbb.css",
-    "main.js": "/DhruvPortfolio/static/js/main.939a6da6.js",
+    "main.js": "/DhruvPortfolio/static/js/main.b38bcdd8.js",
     "static/media/Simple_Beams.pdf": "/DhruvPortfolio/static/media/Simple_Beams.453fd6f06e3fee504244.pdf",
     "static/media/EPQ Presentation.pdf": "/DhruvPortfolio/static/media/EPQ Presentation.4cc40f5478cfde2a8381.pdf",
     "static/media/about-page-img.jpg": "/DhruvPortfolio/static/media/about-page-img.a8c855c33ce36a8d913e.jpg",
@@ -48,7 +48,7 @@
     "static/media/latex.svg": "/DhruvPortfolio/static/media/latex.fd0d36346982bcbd2742993e53929c25.svg",
     "static/media/FTrainer.png": "/DhruvPortfolio/static/media/FTrainer.e7dfd09f554d9de4eb6c.png",
     "static/media/ex.png": "/DhruvPortfolio/static/media/ex.392fbbc50e7de5107df3.png",
-    "static/media/CV.pdf": "/DhruvPortfolio/static/media/CV.9f447722fbc7cc2d9b0f.pdf",
+    "static/media/CV.pdf": "/DhruvPortfolio/static/media/CV.9b10abcfb27f4c16045c.pdf",
     "static/media/pt.png": "/DhruvPortfolio/static/media/pt.fa4c960de95a4705c7ac.png",
     "static/media/alexa.jpg": "/DhruvPortfolio/static/media/alexa.eadb86d9c71f048a0c19.jpg",
     "static/media/java.png": "/DhruvPortfolio/static/media/java.09f5a80c7f42f1c28839.png",
@@ -64,10 +64,10 @@
     "static/media/scroll-down-arrow.svg": "/DhruvPortfolio/static/media/scroll-down-arrow.b013ca458cf827f32732e3ce3c691d03.svg",
     "static/media/social-media-arrow.svg": "/DhruvPortfolio/static/media/social-media-arrow.f5e093ceb316785e72dc77d75e5ed04f.svg",
     "main.bc601dbb.css.map": "/DhruvPortfolio/static/css/main.bc601dbb.css.map",
-    "main.939a6da6.js.map": "/DhruvPortfolio/static/js/main.939a6da6.js.map"
+    "main.b38bcdd8.js.map": "/DhruvPortfolio/static/js/main.b38bcdd8.js.map"
   },
   "entrypoints": [
     "static/css/main.bc601dbb.css",
-    "static/js/main.939a6da6.js"
+    "static/js/main.b38bcdd8.js"
   ]
 }
