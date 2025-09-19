@@ -11,26 +11,35 @@ import CameraImg from '../images/SCam.png';
 import CarImg from '../images/BCar.png';
 import TurbineImg from '../images/WTurbine.png';
 import TrainerImg from '../images/FTrainer.png';
+import LaserTrainer from '../images/laser-based_trainer.png';
+import ASN from '../images/ASNode.png';
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'F-22 Research Model',
-    desc: 'A cardboard scaled version of the F-22 Raptor used for aerodynamic testing, stealth analysis, and flight optimisation to enhance performance and combat capabilities.',
+    name: 'Computational Wind Tunnel Simulator',
+    desc: 'A tool to model and analyse aerodynamic behavior under varying flow conditions for design and performance optimisations.',
     img: ComingSoonImg,
     cs: 1,
   },
   {
     id: uuidv4(),
-    name: 'AI-integrated shuttlecock launcher',
-    desc: 'Using machine learning and real-time tracking to adjust speed, angle, and trajectory, providing precise and adaptive training for badminton players.',
-    img: ComingSoonImg,
-    cs: 1,
+    name: 'AeroSense Node',
+    desc: 'An embedded data-logging module for capturing fine control inputs and vibration signatures, supports aerospace system analysis and use in tactile feedback systems.',
+    img: ASN,
+    cs: 0,
+  },
+  {
+    id: uuidv4(),
+    name: 'Laser-based Sport Trainer',
+    desc: 'A laser focussed footwork aid that uses automated and user-based adjustments of speed, angle and trajectory to deliver precise, adaptive training for coaches and athletes alike.',
+    img: LaserTrainer,
+    cs: 0,
   },
   {
     id: uuidv4(),
     name: 'Footwork Trainer',
-    desc: 'Footwork Trainer is a browser-based tool that helps badminton players improve footwork, agility, and reaction speed using randomized cues and adjustable timing. View at: https://dtt23.github.io/footworkTrainer/',
+    desc: 'Footwork Trainer is a browser-based tool that helps badminton players improve footwork, agility and reaction speed using randomised cues and adjustable timing. View at: https://dtt23.github.io/footworkTrainer/',
     img: TrainerImg,
     cs: 0,
   },

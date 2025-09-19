@@ -358,7 +358,7 @@ export default function About() {
                   <div className="content">
                     <h3>InXploratus Technologies</h3>
                     <p className="degree">InXTech Technical Fellow</p>
-                    <p className="date">June, 2025 - Present</p>
+                    <p className="date">June, 2025 - September, 2025</p>
                     <p className="insideP">
                       {'>'} Mostly working on the Electronics Team by designing
                       and optimising power distribution PCBs, schematics and
@@ -398,7 +398,7 @@ export default function About() {
                     <p className="degree">
                       StudentShapers Intern and UG Teaching Assistant
                     </p>
-                    <p className="date">July, 2024 - October, 2024</p>
+                    <p className="date">July, 2024 - September, 2024</p>
                     <p className="insideP">
                       {'>'} Mastered C# programming, Unity 3D game development
                       and the cutting-edge ViRSE framework.

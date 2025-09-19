@@ -60,7 +60,7 @@ export default function Footer() {
           <h1 className="footer__col1__title">Dhruva Turaga</h1>
           <PText>
             Innovative Aeronautical Engineering student at Imperial College
-            London with a passion for research, design, and cutting-edge
+            London with a passion for research, design and cutting-edge
             technology.
           </PText>
         </div>
@@ -115,18 +115,6 @@ export default function Footer() {
             heading="Social Links"
             links={[
               {
-                title: 'Facebook',
-                path: 'http://facebook.com',
-              },
-              {
-                title: 'Twitter',
-                path: 'http://twitter.com',
-              },
-              {
-                title: 'Instagram',
-                path: 'http://instagram.com',
-              },
-              {
                 title: 'LinkedIn',
                 path: 'https://www.linkedin.com/in/dhruva-teja-turaga-463733229/',
               },
@@ -136,7 +124,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>© 2025 - Dhruva Turaga</PText>
+          <PText>© 2025 - Dhruva Teja Turaga</PText>
         </div>
       </div>
     </FooterStyle>
