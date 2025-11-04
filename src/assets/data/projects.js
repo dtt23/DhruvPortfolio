@@ -17,8 +17,8 @@ import ASN from '../images/ASNode.png';
 const projects = [
   {
     id: uuidv4(),
-    name: 'Computational Wind Tunnel Simulator',
-    desc: 'A tool to model and analyse aerodynamic behavior under varying flow conditions for design and performance optimisations.',
+    name: 'Data-Driven Aeroelastic Wing Experiment',
+    desc: 'Flexible-wing prototype with embedded sensors and Python-based data modelling to investigate aeroelastic behaviour.',
     img: ComingSoonImg,
     cs: 1,
   },
